@@ -170,35 +170,52 @@
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease, border-color 0.35s ease, background 0.35s ease';
         solObserver.observe(card);
     });
-
     /* ----------------------------------------------------------
-       7. CONTACT FORM — submission feedback
-    ---------------------------------------------------------- */
-    const form = document.getElementById('contactForm');
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+   7. CONTACT FORM — envio via AJAX (não sai da página)
+---------------------------------------------------------- */
+const form = document.getElementById('contactForm');
+if (form) {
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-            const btn = form.querySelector('.btn-submit');
-            const original = btn.innerHTML;
+        const btn = form.querySelector('.btn-submit');
+        const original = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Enviando...';
 
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Enviando...';
-
-            setTimeout(() => {
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(res => {
+            if (res.ok) {
                 btn.innerHTML = '<i class="fas fa-check"></i> Mensagem enviada!';
                 btn.style.background = 'var(--secondary)';
                 btn.style.color = '#fff';
-
+                form.reset();
                 setTimeout(() => {
                     btn.disabled = false;
                     btn.innerHTML = original;
                     btn.style.background = '';
                     btn.style.color = '';
-                    form.reset();
-                }, 3000);
-            }, 1400);
+                }, 3500);
+            } else {
+                throw new Error();
+            }
+        })
+        .catch(() => {
+            btn.innerHTML = '<i class="fas fa-times"></i> Erro ao enviar. Tente novamente.';
+            btn.style.background = '#c0392b';
+            btn.style.color = '#fff';
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.innerHTML = original;
+                btn.style.background = '';
+                btn.style.color = '';
+            }, 3500);
         });
-    }
+    });
+}
 
 })();

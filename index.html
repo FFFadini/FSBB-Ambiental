@@ -315,33 +315,37 @@
                             </div>
                             <div class="col-lg-7 contato-form-col">
                                 <div class="contato-form-wrap">
-                                    <form id="contactForm">
+                                    <!--  Adicionar o email profissional  -->
+                                    <form id="contactForm" action="https://formsubmit.co/#"
+                                        method="POST">
                                         <div class="row g-3">
                                             <div class="col-sm-6">
                                                 <label class="form-label-custom">Nome Completo</label>
-                                                <input type="text" class="form-input-custom"
+                                                <input type="text"  name="name" class="form-input-custom"
                                                     placeholder="Ex: Raquel Silva" required>
                                             </div>
                                             <div class="col-sm-6">
                                                 <label class="form-label-custom">E-mail</label>
-                                                <input type="email" class="form-input-custom"
+                                                <input type="email"  name="email" class="form-input-custom"
                                                     placeholder="exemplo@email.com" required>
                                             </div>
                                             <div class="col-12">
                                                 <label class="form-label-custom">Empresa</label>
-                                                <input type="text" class="form-input-custom"
+                                                <input type="text"  name="empresa" class="form-input-custom"
                                                     placeholder="Nome da sua empresa">
                                             </div>
                                             <div class="col-12">
                                                 <label class="form-label-custom">Assunto</label>
-                                                <input type="text" class="form-input-custom"
+                                                <input type="text"  name="assunto" class="form-input-custom"
                                                     placeholder="Ex: Oportunidade de Projeto">
                                             </div>
                                             <div class="col-12">
                                                 <label class="form-label-custom">Mensagem</label>
-                                                <textarea class="form-input-custom" rows="5"
+                                                <textarea class="form-input-custom"  name="mensagem" rows="5"
                                                     placeholder="Como podemos te ajudar?" required></textarea>
                                             </div>
+                                            <input type="hidden" name="_captcha" value="false">
+                                            <input type="hidden" name="_subject" value="Novo contato pelo site FSBB">
                                             <div class="col-12">
                                                 <button type="submit" class="btn-submit">Enviar Mensagem <i
                                                         class="fas fa-paper-plane"></i></button>
