@@ -7,17 +7,13 @@
     --secondary:  #627263;
     --accent:     #c3b8a5;
     --dark-teal:  #203b44;
-    --nav: #293835;
-
     /* Cores Secundárias */
     --bg-light:   #f7f6f3;
     --bg-mid:     #dfdedb;
     --bg-muted:   #bbbbbb;
-
     /* Tipografia */
     --font-display: 'Cormorant Garamond', serif;
     --font-body:    'DM Sans', sans-serif;
-
     /* Espaçamentos */
     --section-py: 100px;
     --navbar-h:   72px;
@@ -620,15 +616,6 @@ em { font-style: italic; color: var(--secondary); }
     color: rgba(255,255,255,.35);
     margin: 0;
 }
-.footer-social { display: flex; gap: 1rem; justify-content: flex-end; }
-.footer-social a {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,.35);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.footer-social a:hover { color: var(--accent); }
-
 /* ============================================================
    RESPONSIVE
    ============================================================ */
