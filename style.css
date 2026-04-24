@@ -404,7 +404,7 @@ em { font-style: italic; color: var(--secondary); }
 
 .valor-card {
     text-align: center;
-    padding: 1.8rem 1.2rem;
+    padding: 1.8rem 0.4rem;
     background: #fff;
     border-radius: 2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -428,7 +428,7 @@ em { font-style: italic; color: var(--secondary); }
 .valor-name {
     display: block;
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--primary);
     margin-bottom: 0.5rem;
@@ -640,7 +640,7 @@ em { font-style: italic; color: var(--secondary); }
         margin-top: 0.5rem;
     }
 
-    .valor-name {font-size: 0.9rem; font-weight: 500 bold; right: 10px;}
+    .valor-name {font-size: 0.95rem;; font-weight: 500 bold; }
 
     .sobre-stat-card { position: relative; bottom: auto; right: auto; margin-top: 0.1rem; display: inline-flex; }
     .sobre-image-wrap { margin-bottom: 5rem; left: 20px;}
