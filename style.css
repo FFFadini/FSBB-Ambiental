@@ -12,11 +12,29 @@
     --bg-mid:     #dfdedb;
     --bg-muted:   #bbbbbb;
     /* Tipografia */
-    --font-display: 'Cormorant Garamond', serif;
-    --font-body:    'DM Sans', sans-serif;
+    --font-display: 'Montserrat', serif;
+    --font-body:    'Montserrat', sans-serif;
     /* Espaçamentos */
     --section-py: 100px;
     --navbar-h:   72px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Peso normal para leitura */
+}
+
+/* Garante que os títulos também usem a Montserrat com um peso mais forte */
+h1, h2, h3, h4, .hero-title, .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Peso negrito para impacto */
+}
+
+/* Se manter um aspeto mais leve em sub títulos ou "eyebrows" */
+.hero-eyebrow, .section-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px; /* Montserrat fica muito bem com um pouco de espaçamento */
+    text-transform: uppercase;
 }
 
 /* ============================================================
@@ -65,17 +83,10 @@ em { font-style: italic; color: var(--secondary); }
     opacity: 1;
     transition: opacity 0.25s ease, height 0.35s ease;
 }
-#mainNav.scrolled .nav-logo {
-    height: 32px;
-}
 
 #mainNav {
     height: var(--navbar-h);
-    background: transparent;
-    transition: background 0.4s ease, box-shadow 0.4s ease;
     z-index: 1000;
-}
-#mainNav.scrolled {
     background: var(--secondary);
     box-shadow: 0 2px 30px rgba(0,0,0,.18);
 }
