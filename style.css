@@ -650,49 +650,92 @@ em { font-style: italic; color: var(--secondary); }
         margin-top: 0.5rem;
     }
 
-    .valor-name {font-size: 0.95rem;; font-weight: 500 bold; }
-
-    .sobre-stat-card { position: relative; bottom: auto; right: auto; margin-top: 0.1rem; display: inline-flex; }
-    .sobre-image-wrap { margin-bottom: 5rem; left: 20px;}
+    .sobre-stat-card { position: relative; bottom: auto; right: auto; margin-top: 1.5rem; display: inline-flex; }
+    .sobre-image-wrap { margin-bottom: 4rem; }
 
     .contato-info { padding: 2.5rem 2rem; }
     .contato-form-wrap { padding: 2.5rem 2rem; }
 
     .footer-social { justify-content: flex-start; margin-top: 0.5rem; }
-
-    .hero-section {min-height: 100svh; padding-bottom: 80px;}
-    .hero-scroll-hint {bottom: 1.2rem;}
 }
 
+/* Tablet pequeno / celular grande (576px–768px) — S21+, Pixel, etc */
+@media (min-width: 576px) and (max-width: 768px) {
+    .hero-section {
+        min-height: 100svh;
+        padding-bottom: 80px;
+    }
+    .hero-title { font-size: 2rem; }
+    .hero-desc  { font-size: 0.9rem; }
+
+    .hero-actions { gap: 0.7rem; }
+    .btn-primary-custom,
+    .btn-outline-custom {
+        padding: 0.7rem 1.6rem;
+        font-size: 0.78rem;
+    }
+}
+
+/* Celular médio (400px–575px) — iPhone SE, Moto G, Galaxy A */
 @media (max-width: 575.98px) {
     :root { --section-py: 56px; }
-    .hero-title { font-size: 2.2rem; }
-    .btn-primary-custom, .btn-outline-custom { padding: 0.75rem 1.5rem; font-size: 0.78rem; }
+
+    .hero-section {
+        min-height: 100svh;
+        padding-bottom: 80px;
+    }
+    .hero-scroll-hint { bottom: 1.2rem; }
+    .hero-title { font-size: 1.8rem; }
+    .hero-desc  { font-size: 0.88rem; }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    .btn-primary-custom,
+    .btn-outline-custom {
+        padding: 0.65rem 1.4rem;
+        font-size: 0.74rem;
+        text-align: center;
+        width: fit-content;
+    }
+
     .valores-section { padding: 2.5rem 1.2rem; }
-
-    .hero-section {min-height: 100svh; padding-bottom: 80px;}
-    .hero-scroll-hint {bottom: 1.2rem;}
+    .valor-card  { padding: 1.4rem 0.6rem; }
+    .valor-name  { font-size: 0.95rem; }
 }
 
-/* Telas pequenas (360px–399px) */
+/* Celular pequeno (360px–399px) — Galaxy A03, Redmi */
 @media (max-width: 399px) {
-    .valor-card { padding: 1.2rem 0.5rem; }
-    .valor-name { font-size: 0.88rem; }
-    .valor-desc { font-size: 0.78rem; }
-    .valor-icon { width: 50px; height: 50px; }
-    .valor-icon i { font-size: 1.1rem; }
+    .hero-title { font-size: 1.55rem; }
+    .hero-desc  { font-size: 0.82rem; }
 
-    .hero-section {min-height: 100svh; padding-bottom: 80px;}
-    .hero-scroll-hint {bottom: 1.2rem;}
+    .btn-primary-custom,
+    .btn-outline-custom {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.70rem;
+    }
+
+    .valor-card  { padding: 1.2rem 0.5rem; }
+    .valor-name  { font-size: 0.88rem; }
+    .valor-desc  { font-size: 0.78rem; }
+    .valor-icon  { width: 50px; height: 50px; }
+    .valor-icon i { font-size: 1.1rem; }
 }
 
-/* Telas muito pequenas (abaixo de 360px) */
+/* Celular muito pequeno (< 360px) */
 @media (max-width: 359px) {
-    .valor-card { padding: 1rem 0.4rem; }
-    .valor-name { font-size: 0.80rem; }
-    .valor-desc { font-size: 0.74rem; }
-    .valor-icon { width: 44px; height: 44px; }
+    .hero-title { font-size: 1.35rem; }
+    .hero-desc  { font-size: 0.78rem; }
 
-    .hero-section {min-height: 100svh; padding-bottom: 80px;}
-    .hero-scroll-hint {bottom: 1.2rem;}
+    .btn-primary-custom,
+    .btn-outline-custom {
+        padding: 0.55rem 1rem;
+        font-size: 0.66rem;
+    }
+
+    .valor-card  { padding: 1rem 0.4rem; }
+    .valor-name  { font-size: 0.80rem; }
+    .valor-desc  { font-size: 0.74rem; }
+    .valor-icon  { width: 44px; height: 44px; }
 }
