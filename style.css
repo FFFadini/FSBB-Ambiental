@@ -90,6 +90,12 @@ em { font-style: italic; color: var(--secondary); }
     z-index: 1000;
     background: var(--secondary);
     box-shadow: 0 2px 30px rgba(0,0,0,.18);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .navbar-brand {
