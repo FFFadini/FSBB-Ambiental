@@ -428,7 +428,7 @@ em { font-style: italic; color: var(--secondary); }
 .valor-name {
     display: block;
     font-family: var(--font-display);
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--primary);
     margin-bottom: 0.5rem;
@@ -640,8 +640,10 @@ em { font-style: italic; color: var(--secondary); }
         margin-top: 0.5rem;
     }
 
-    .sobre-stat-card { position: relative; bottom: auto; right: auto; margin-top: 1.5rem; display: inline-flex; }
-    .sobre-image-wrap { margin-bottom: 4rem; }
+    .valor-name {font-size: 0.9rem; font-weight: 500 bold;}
+
+    .sobre-stat-card { position: relative; bottom: auto; right: auto; margin-top: 0.1rem; display: inline-flex; }
+    .sobre-image-wrap { margin-bottom: 5rem; left: 20px;}
 
     .contato-info { padding: 2.5rem 2rem; }
     .contato-form-wrap { padding: 2.5rem 2rem; }
