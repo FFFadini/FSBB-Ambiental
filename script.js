@@ -1,8 +1,3 @@
-/* ============================================================
-   script.js — FSBB Consultoria
-   Handles: navbar scroll, fade-in on scroll, active link, form
-   ============================================================ */
-
 (function () {
       /* ----------------------------------------------------------
        2. SMOOTH SCROLL — for all anchor links
