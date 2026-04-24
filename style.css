@@ -657,3 +657,20 @@ em { font-style: italic; color: var(--secondary); }
     .btn-primary-custom, .btn-outline-custom { padding: 0.75rem 1.5rem; font-size: 0.78rem; }
     .valores-section { padding: 2.5rem 1.2rem; }
 }
+
+/* Telas pequenas (360px–399px) */
+@media (max-width: 399px) {
+    .valor-card { padding: 1.2rem 0.5rem; }
+    .valor-name { font-size: 0.88rem; }
+    .valor-desc { font-size: 0.78rem; }
+    .valor-icon { width: 50px; height: 50px; }
+    .valor-icon i { font-size: 1.1rem; }
+}
+
+/* Telas muito pequenas (abaixo de 360px) */
+@media (max-width: 359px) {
+    .valor-card { padding: 1rem 0.4rem; }
+    .valor-name { font-size: 0.80rem; }
+    .valor-desc { font-size: 0.74rem; }
+    .valor-icon { width: 44px; height: 44px; }
+}
