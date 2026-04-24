@@ -704,7 +704,7 @@ em { font-style: italic; color: var(--secondary); }
 
     .valores-section { padding: 2.5rem 1.2rem; }
     .valor-card  { padding: 1.4rem 0.6rem; }
-    .valor-name  { font-size: 0.95rem; }
+    .valor-name  { font-size: 0.9rem; }
 }
 
 /* Celular pequeno (360px–399px) — Galaxy A03, Redmi */
@@ -719,7 +719,7 @@ em { font-style: italic; color: var(--secondary); }
     }
 
     .valor-card  { padding: 1.2rem 0.5rem; }
-    .valor-name  { font-size: 0.88rem; }
+    .valor-name  { font-size: 0.80rem; }
     .valor-desc  { font-size: 0.78rem; }
     .valor-icon  { width: 50px; height: 50px; }
     .valor-icon i { font-size: 1.1rem; }
