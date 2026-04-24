@@ -640,7 +640,7 @@ em { font-style: italic; color: var(--secondary); }
         margin-top: 0.5rem;
     }
 
-    .valor-name {font-size: 0.9rem; font-weight: 500 bold;}
+    .valor-name {font-size: 0.9rem; font-weight: 500 bold; right: 10px;}
 
     .sobre-stat-card { position: relative; bottom: auto; right: auto; margin-top: 0.1rem; display: inline-flex; }
     .sobre-image-wrap { margin-bottom: 5rem; left: 20px;}
