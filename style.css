@@ -649,7 +649,7 @@ em { font-style: italic; color: var(--secondary); }
         padding: 1rem 1.5rem 1.5rem;
         margin-top: 0.5rem;
     }
-    .valor-name {font-size: 0.95rem;; font-weight: 500 bold; }
+    .valor-name {font-size: 0.9rem;; font-weight: 500 bold; }
 
     .sobre-stat-card { position: relative; bottom: auto; right: auto; margin-top: 1.5rem; display: inline-flex; }
     .sobre-image-wrap { margin-bottom: 4rem; }
@@ -675,7 +675,7 @@ em { font-style: italic; color: var(--secondary); }
         padding: 0.7rem 1.6rem;
         font-size: 0.78rem;
     }
-    .valor-name {font-size: 0.95rem;; font-weight: 500 bold; }
+    .valor-name {font-size: 0.9rem;; font-weight: 500 bold; }
 }
 
 /* Celular médio (400px–575px) — iPhone SE, Moto G, Galaxy A */
