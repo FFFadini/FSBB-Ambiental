@@ -280,9 +280,13 @@ em { font-style: italic; color: var(--secondary); }
 
 .hero-scroll-hint {
     position: absolute;
-    bottom: 2.5rem; left: 50%;
-    transform: translateX(-50%);
-    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    bottom: 2.5rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     z-index: 2;
 }
 .hero-scroll-hint span {
