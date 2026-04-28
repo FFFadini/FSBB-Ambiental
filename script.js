@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                fadeObserver.unobserve(entry.target);
             }
         });
     }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
@@ -97,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
                 }, i * 80);
-                valorObserver.unobserve(entry.target);
             }
         });
     }, { threshold: 0.15 });
@@ -121,7 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
                 }, i * 100);
-                solObserver.unobserve(entry.target);
             }
         });
     }, { threshold: 0.1 });
