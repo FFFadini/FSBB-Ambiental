@@ -70,6 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
             }
         });
     }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
@@ -96,6 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
                 }, i * 80);
+            } else {
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(24px)';
             }
         });
     }, { threshold: 0.15 });
@@ -119,6 +124,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
                 }, i * 100);
+            } else {
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(30px)';
             }
         });
     }, { threshold: 0.1 });
